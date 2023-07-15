@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Plugin Name: Breakdance Custom Elements
+ * Plugin Name: NetNet Brk Element
  * Plugin URI: https://breakdance.com/
  * Description: Boilerplate plugin to save your custom elements created with Element Studio.
  * Author: Breakdance
- * Author URI: https://breakdance.com/
+ * Author URI: https://netnet.nu/
  * License: GPLv2
  * Text Domain: breakdance
  * Domain Path: /languages/
