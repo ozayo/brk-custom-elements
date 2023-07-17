@@ -1,3 +1,46 @@
-%%SELECTOR%% .cst-code { 
-{{ macros.typography(design.settings.typography, globalSettings) }}
+%%SELECTOR%% .cst-hgl {
+{{ macros.spacing_all(design.settings.spacing) }};
+{{ macros.background(design.settings.background) }}
+{{ macros.borders_without_shadows(design.settings.background_border) }}
+}
+
+
+%%SELECTOR%% pre code.hljs {
+	font-size: {{ design.settings.font_size.style }};
+}
+%%SELECTOR%% #custom-tooltip { 
+background-color: {{ design.tooltip_design.tooltip_bg_color }};
+font-size: {{ design.tooltip_design.font_size.style }};
+color:{{ design.tooltip_design.tooltip_font_color }};
+{{ macros.spacing_padding_all(design.tooltip_design.tooltip_padding) }};
+}
+
+%%SELECTOR%% .copybtn { 
+  background-color: {{ design.tooltip_design.button_bg_color }};
+  width:{{ design.tooltip_design.button_size.style }};
+  height:{{ design.tooltip_design.button_size.style }};
+}
+%%SELECTOR%% .copybtn:hover {
+background-color: {{ design.tooltip_design.button_bg_color_hover }};
+}
+
+%%SELECTOR%% .copybtn-svg svg {
+width:{{ design.tooltip_design.button_icon_size.style }};
+height:{{ design.tooltip_design.button_icon_size.style }};
+fill:{{ design.tooltip_design.button_icon_color }};
+}
+%%SELECTOR%% .copybtn:hover .copybtn-svg svg {
+fill:{{ design.tooltip_design.button_icon_color_hover }};
+}
+
+%%SELECTOR%% .header {
+{{ macros.border_complex(design.settings.border) }};
+border-bottom:none;
+}
+%%SELECTOR%% .code-box-copy pre {
+  {{ macros.border_complex(design.settings.border) }};
+  border-top:none;
+}
+%%SELECTOR%% .cst-code-name {
+{{ macros.typography(design.settings.code_name_font, globalSettings) }}
 }
